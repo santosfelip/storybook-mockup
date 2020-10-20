@@ -473,7 +473,7 @@
                 "subtype": "variable",
                 "file": "src/stories/Button.stories.ts",
                 "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
+                "defaultValue": "(args: Button) => ({\n    component: Button,\n    props: args,\n})"
             },
             {
                 "name": "Template",
@@ -572,7 +572,7 @@
                     "subtype": "variable",
                     "file": "src/stories/Button.stories.ts",
                     "type": "Story<Button>",
-                    "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
+                    "defaultValue": "(args: Button) => ({\n    component: Button,\n    props: args,\n})"
                 }
             ],
             "src/stories/Header.stories.ts": [
