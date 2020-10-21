@@ -1,15 +1,7 @@
-// also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import { addDecorator } from '@storybook/angular';
-import { withTests } from '@storybook/addon-jest';
 import { Story, Meta } from '@storybook/angular/types-6-0';
 import Button from './button.component';
-
-addDecorator(
-    withTests({
-        results: '',
-        filesExt: "((\\.specs?)|(\\.tests?))?(\\.ts)?$",
-    })
-)
+import results from '../../.jest-test-results.json';
+import { withTests } from '@storybook/addon-jest';
 
 export default {
     title: 'Example/Button',
@@ -17,11 +9,13 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
+    decorators: [withTests({ results })]
 } as Meta;
+
 
 const Template: Story<Button> = (args: Button) => ({
     component: Button,
-    props: args,
+    props: args
 });
 
 export const Primary = Template.bind({});
@@ -29,6 +23,10 @@ Primary.args = {
     primary: true,
     label: 'Button',
 };
+
+Primary.parameters = {
+    jest: ['Button.stories.test.ts']
+}
 
 export const Secondary = Template.bind({});
 Secondary.args = {

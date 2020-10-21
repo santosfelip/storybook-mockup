@@ -10,8 +10,11 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "importHelpers": true,
     "target": "es2015",
+    "types":["jest"],
+    "typeRoots": ["../../node_modules/@types", "node_modules/@types","@types/jest"],
     "module": "es2020",
     "lib": [
       "es2018",

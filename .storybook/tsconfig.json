@@ -3,7 +3,8 @@
   "compilerOptions": {
     "skipLibCheck": true,
     "types": [
-      "node"
+      "node",
+      "@types/jest"
     ]
   },
   "exclude": [
