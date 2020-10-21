@@ -1,0 +1,24 @@
+ion-card {
+    padding: 30px;
+    border: solid 1px #e5e5e5;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+ion-card-title {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ion-card-content {
+    color: #555;
+    font-size: 22px;
+}
+
+ion-datetime {
+    color: #636363;
+    opacity: 100%;
+    margin-top: 48px;
+    padding: 0;
+}
