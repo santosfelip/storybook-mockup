@@ -9,6 +9,7 @@ import { PdfviewComponent } from './pdfview/pdfview.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
     declarations: [
         AppComponent,

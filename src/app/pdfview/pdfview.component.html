@@ -1,4 +1,16 @@
-<h1>PDF :</h1>
-<ion-button>Botao de Teste</ion-button>
-<pdf-viewer [src]="pdfSrc" style="display: block;"></pdf-viewer>
-<p>Link do pdf = {{pdfSrc}}</p>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button size="small" (click)="onRotation()" style="--background: {{colorButton}}">
+        <ion-icon name="reload" size="small"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button size="small" (click)="onZoom(true)" style="--background: {{colorButton}}">
+        <ion-icon name="add" size="small"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button size="small" (click)="onZoom(false)" style="--background: {{colorButton}}">
+        <ion-icon name="remove" size="small"></ion-icon>
+    </ion-fab-button>
+</ion-fab>
+
+
+<pdf-viewer [src]="pdfSrc" [original-size]="false" [zoom]="zoomValue" [rotation]="rotationValue"
+    style="display: block;">
+</pdf-viewer>

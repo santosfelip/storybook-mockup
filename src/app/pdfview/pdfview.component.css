@@ -2,3 +2,10 @@ pdf-viewer {
     height: 100%;
     overflow: scroll;
 }
+ion-fab {
+    margin-right: 10px;
+    font-size: 20px;
+}
+ion-fab-button {
+    margin-bottom: 10px;
+}
